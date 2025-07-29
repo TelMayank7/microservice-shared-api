@@ -7,7 +7,7 @@ const UserSchema = new Schema<IUSerDoc>({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     age: { type: Number, required: true },
-}, {    
+}, {     
     timestamps: true
 })
 
