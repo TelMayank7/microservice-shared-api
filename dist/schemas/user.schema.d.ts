@@ -1,11 +1,11 @@
-import { Model, Types } from "mongoose";
+import { Document, Model, Types } from "mongoose";
 export interface IUSer {
     name: string;
     email: string;
     password: string;
     age: number;
 }
-export interface IUSerDoc extends IUSer {
+export interface IUSerDoc extends IUSer, Document {
     _id: Types.ObjectId;
     createdAt: Date;
     updatedAt: Date;
