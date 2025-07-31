@@ -1,0 +1,62 @@
+
+.
+├── lib
+     ├── dto
+     ├── i18n
+├── src
+     ├── dao
+     ├── middlewares
+     ├── routes
+        ├── route-name
+           ├── ${route-name}Routes
+           ├── ${route-name}Service
+           ├── ${route-name}Validations
+           ├── index.ts
+        ├── index.ts
+     ├── static
+     ├── utils
+        ├── common.ts
+        ├── validations.ts
+     ├── views
+     ├── index.ts
+└── package.tson
+└── tsconfig.json
+└── .env.api.example
+└── .env.api
+└── README.md
+
+
+
+Root folders
+
+
+lib - holds the whole common libraries
+
+src - holds the whole express code structure
+
+
+lib folder
+
+
+dto - holds the common dto wrapper
+
+i18n - holds the localization logic & language files
+
+
+src.* server folder
+
+
+dao - holds database queries
+
+middlewares - holds express middlewares for processing http requests
+
+routes - holds express routes
+
+static - holds static files i.e. CSS, Javascript or images
+
+utils - contains common utils
+
+views - contains html views developed with template engine EJS
+
+index.ts - main entry point for server i.e. express server file
+
